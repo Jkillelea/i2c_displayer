@@ -1,0 +1,12 @@
+# Packages required for bundler to install properly
+
+ruby
+ruby-dev
+rubygems-integration
+build-essential
+bundler
+g++
+imagemagick
+libmagickcore-dev
+libmagickwand-dev
+
