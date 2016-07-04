@@ -3,7 +3,7 @@
 set -e
 
 echo "Installing system level dependencies..."
-sudo apt install -y ruby \
+sudo apt-get install -y ruby \
 ruby-dev \
 rubygems \
 rubygems-integration \
