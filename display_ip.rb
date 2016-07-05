@@ -4,14 +4,14 @@ require "socket"
 require "SSD1306"
 require "./lib/argparser.rb"
 
-font_size = ArgParser::val_at_flag "--font"
+$FONT_SIZE  = ArgParser::val_at_flag "--font"
 
 disp = SSD1306::Display.new
 
-unless font_size == nil
-  disp.font_size font_size.to_i
+unless $FONT_SIZE == nil
+  disp.font_size $FONT_SIZE.to_i
 else
-  disp.font_size 1
+  disp.font_size 2
 end
 
 ip = Socket.ip_address_list[1].ip_address
