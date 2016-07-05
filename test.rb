@@ -2,4 +2,6 @@
 
 require "./lib/argparser.rb"
 
-puts ArgParser::find_arg_val("-t")
+puts "args: #{ARGV}"
+
+puts ArgParser::val_at_flag "-t"
