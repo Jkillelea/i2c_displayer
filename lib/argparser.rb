@@ -5,6 +5,8 @@ module ArgParser
   end
 
   def self.find_arg_val(flag) # returns the next after a specified flag string, such as "-t"
+    return nil if ARGV.empty?
+    
     ARGV.each_with_index do |arg, index|
       if ARGV[index] == flag
         return ARGV[index+1]
