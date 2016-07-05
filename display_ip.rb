@@ -5,7 +5,7 @@ require "SSD1306"
 require "./lib/argparser.rb"
 
 font_size = ArgParser::val_at_flag "--font"
-
+font_size.to_i!
 
 disp = SSD1306::Display.new
 
