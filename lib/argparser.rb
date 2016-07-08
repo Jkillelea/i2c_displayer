@@ -1,3 +1,4 @@
+# Copyright Jacob Killelea <Jkillelea@protonmail.ch>
 module ArgParser
 
   def self.puts_args

@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# Copyright Jacob Killelea <Jkillelea@protonmail.ch>
 
 require "SSD1306"
 

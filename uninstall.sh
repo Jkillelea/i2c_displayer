@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Copyright Jacob Killelea <Jkillelea@protonmail.ch>
 
 set -e
 
