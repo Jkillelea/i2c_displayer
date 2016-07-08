@@ -1,14 +1,12 @@
 #!/usr/bin/ruby
 # Copyright Jacob Killelea <Jkillelea@protonmail.ch>
-
 require "socket"
 require "SSD1306"
 require "./lib/argparser.rb"
 
-FONT_SIZE  = ArgParser::val_at_flag "--font"
-
 disp = SSD1306::Display.new
 
+FONT_SIZE  = ArgParser::val_at_flag "--font"
 unless FONT_SIZE == nil
   disp.font_size FONT_SIZE.to_i
 else
