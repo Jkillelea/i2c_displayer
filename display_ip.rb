@@ -6,7 +6,7 @@ require "./lib/argparser.rb"
 
 disp = SSD1306::Display.new
 
-FONT_SIZE  = ArgParser::val_at_flag "--font"
+FONT_SIZE = ArgParser::val_at_flag "--font"
 unless FONT_SIZE == nil
   disp.font_size = FONT_SIZE.to_i
 else
