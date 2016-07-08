@@ -5,6 +5,7 @@ module ArgParser
     puts ARGV
   end
 
+
   def self.find_arg_val(flag)  # returns the next after a specified flag string, such as "-t"
     return nil if ARGV.empty?  # if there's no args, prevent returning of empty array
     ARGV.each_index do |index| # otherwise look for the arg
