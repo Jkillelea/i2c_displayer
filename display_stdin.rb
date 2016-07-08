@@ -9,7 +9,7 @@ FONT_SIZE  = ArgParser::val_at_flag "--font"
 unless FONT_SIZE == nil
   disp.font_size FONT_SIZE.to_i
 else
-  disp.font_size 2
+  disp.font_size 1
 end
 
 
