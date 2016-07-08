@@ -29,7 +29,8 @@ module ArgParser
      end
    end
  end
- alias_method :given_arg?, :given_flag?
- alias_method :arg_given?, :given_flag?
+ def self.given_arg?(arg)
+   given_flag(arg)
+ end
 
 end
