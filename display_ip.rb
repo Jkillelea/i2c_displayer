@@ -5,12 +5,12 @@ require "socket"
 require "SSD1306"
 require "./lib/argparser.rb"
 
-$FONT_SIZE  = ArgParser::val_at_flag "--font"
+FONT_SIZE  = ArgParser::val_at_flag "--font"
 
 disp = SSD1306::Display.new
 
-unless $FONT_SIZE == nil
-  disp.font_size $FONT_SIZE.to_i
+unless FONT_SIZE == nil
+  disp.font_size FONT_SIZE.to_i
 else
   disp.font_size 2
 end
