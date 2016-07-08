@@ -21,6 +21,7 @@ module ArgParser
   end
 
  def self.given_flag?(flag)
+   return false if ARGV.length == 0
    ARGV.each do |arg|
      if arg == flag
        return true
