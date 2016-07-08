@@ -29,7 +29,7 @@ module ArgParser
      end
    end
  end
- alias_method :given_arg? :given_flag?
- alias_method :arg_given? :given_flag?
+ alias_method :given_arg?, :given_flag?
+ alias_method :arg_given?, :given_flag?
 
 end
