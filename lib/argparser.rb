@@ -30,7 +30,7 @@ module ArgParser
      end
    end
  end
- def self.given_arg?(arg)
+ def self.given_arg?(arg) # just calls the function above
    given_flag?(arg)
  end
 
