@@ -15,10 +15,10 @@ module ArgParser
       end
     end
   end
-
   def self.val_at_flag(flag) # just calls the function above
     find_arg_val(flag)
   end
+
 
  def self.given_flag?(flag)
    ARGV.each do |arg|
