@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 require "SSD1306"
-require "lib/argparser"
+require "./lib/argparser"
 
 disp = SSD1306::Display.new
 
