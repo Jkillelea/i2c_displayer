@@ -8,9 +8,9 @@ disp = SSD1306::Display.new
 
 FONT_SIZE  = ArgParser::val_at_flag "--font"
 unless FONT_SIZE == nil
-  disp.font_size FONT_SIZE.to_i
+  disp.font_size = FONT_SIZE.to_i
 else
-  disp.font_size 2
+  disp.font_size = 2
 end
 
 ip = Socket.ip_address_list[1].ip_address

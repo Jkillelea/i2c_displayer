@@ -9,5 +9,5 @@ ARGV.each do |arg|
   disp.println arg
 end
 
-disp.font_size 1
+disp.font_size = 1
 disp.display!
