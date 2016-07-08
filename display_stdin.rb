@@ -5,7 +5,8 @@ require "./lib/argparser"
 
 disp = SSD1306::Display.new
 
-FONT_SIZE = ArgParser::val_at_flag "--font"
+# FONT_SIZE = ArgParser::val_at_flag "--font"
+FONT_SIZE = ArgParser::val_at_flag( "--font").to_i
 
 while to_display = STDIN.getc do
   disp.print to_display
