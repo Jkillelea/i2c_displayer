@@ -14,7 +14,6 @@ module ArgParser
         return nil
       end
     end
-
   end
 
   def self.val_at_flag(flag) # just calls the function above
